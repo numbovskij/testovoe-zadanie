@@ -10,6 +10,8 @@ use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Query;
 use Rebing\GraphQL\Support\SelectFields;
 
+use GraphQL;
+
 class LeadQuery extends Query
 {
     protected $attributes = [
@@ -19,12 +21,18 @@ class LeadQuery extends Query
 
     public function type(): Type
     {
-        return Type::listOf(Type::string());
+        // return Type::listOf(Type::string());
+         return GraphQL::type('Lead');
     }
 
     public function args(): array
     {
         return [
+            'id' => [
+                'name' => 'id',
+                'type' => Type::int(),
+                // 'rules' => ['required']
+            ],
 
         ];
     }

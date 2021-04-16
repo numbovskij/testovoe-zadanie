@@ -15,9 +15,9 @@ use App\Http\Controllers\JobController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/jobtest', function () {
+   App\Jobs\LeadJob::dispatch("test mess")->delay(now()->addMinutes(10));
+});
 
 // Route::get('/', 'MainController@index');
 

@@ -93,18 +93,22 @@ return [
     //      ],
     //  ]
     //
-   'schemas' => [
+  'schemas' => [
     'default' => [
         'query' => [
-            'users' => 'App\GraphQL\Query\UsersQuery'
+            'lead' => App\GraphQL\Queries\leadQuery::class,
+            
         ],
         'mutation' => [
-            'createUser' => 'App\GraphQL\Mutation\CreateUserMutation'
-        ]
-    ]
+            'createLead' => App\GraphQL\Mutations\CreateleadMutation::class,
+            
+        ],
+        'middleware' => [],
+        'method' => ['get', 'post'],
+    ],
 ],
 'types' => [
- 'User' => 'App\GraphQL\Type\UserType'
+    'Lead' => App\GraphQL\Types\LeadType::class,
 ],
 
     // The types available in the application. You can then access it from the
@@ -116,16 +120,16 @@ return [
     //     App\GraphQL\Type\UserType::class
     // ]
     //
-    'types' => [
+   // 'types' => [
         // ExampleType::class,
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
-    ],
+   // ],
 
     // The types will be loaded on demand. Default is to load all types on each request
     // Can increase performance on schemes with many types
     // Presupposes the config type key to match the type class name property
-    'lazyload_types' => false,
+   'lazyload_types' => false,
 
     // This callable will be passed the Error object for each errors GraphQL catch.
     // The method should return an array representing the error.
@@ -134,7 +138,7 @@ return [
     //     'message' => '',
     //     'locations' => []
     // ]
-    'error_formatter' => [\Rebing\GraphQL\GraphQL::class, 'formatError'],
+   'error_formatter' => [\Rebing\GraphQL\GraphQL::class, 'formatError'],
 
     /*
      * Custom Error Handling

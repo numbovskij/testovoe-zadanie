@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "330d4329b1ace9bcf860204f7b05040e",
+    "content-hash": "f6c03aa030176baf9bd987a33a9401b2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2643,16 +2643,16 @@
         },
         {
             "name": "rebing/graphql-laravel",
-            "version": "7.0.1",
+            "version": "7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rebing/graphql-laravel.git",
-                "reference": "8d49e7dc2f3003e845b1198e638f7740f4d55279"
+                "reference": "b602945f92d0fa56efd763ac14c98af8ee5391d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/8d49e7dc2f3003e845b1198e638f7740f4d55279",
-                "reference": "8d49e7dc2f3003e845b1198e638f7740f4d55279",
+                "url": "https://api.github.com/repos/rebing/graphql-laravel/zipball/b602945f92d0fa56efd763ac14c98af8ee5391d4",
+                "reference": "b602945f92d0fa56efd763ac14c98af8ee5391d4",
                 "shasum": ""
             },
             "require": {
@@ -2666,6 +2666,7 @@
                 "ext-pdo_sqlite": "*",
                 "friendsofphp/php-cs-fixer": "^2.15",
                 "laravel/legacy-factories": "^1.0",
+                "mfn/php-cs-fixer-config": "^1",
                 "mockery/mockery": "^1.2",
                 "nunomaduro/larastan": "0.7.0",
                 "orchestra/testbench": "4.0.*|5.0.*|^6.0",
@@ -2674,7 +2675,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.x-dev"
+                    "dev-master": "7.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -2732,9 +2733,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rebing/graphql-laravel/issues",
-                "source": "https://github.com/rebing/graphql-laravel/tree/7.0.1"
+                "source": "https://github.com/rebing/graphql-laravel/tree/7.2.0"
             },
-            "time": "2021-04-05T19:43:58+00:00"
+            "time": "2021-04-10T20:08:57+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
